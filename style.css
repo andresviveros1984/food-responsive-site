@@ -1,0 +1,209 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  background-color: white;
+}
+
+
+.bars{
+  height: 100%;
+  padding: 10px;
+}
+
+.bars:hover{
+  background-color: rgb(194, 187, 187);
+}
+
+.drop-down{
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  background-color: white;
+  box-shadow: 2px 0px 10px rgb(219, 216, 216);
+  border-right-color: rgb(136, 130, 130);
+  width: 480px;
+  height: 100vh;
+  z-index: 11;
+  /* this needs to take prescedence over sticky nav */
+
+}
+
+
+.drop{
+  width: 100%;
+  height: 80px;
+} 
+
+.drop h1{
+  padding-left: 20px;
+}
+
+.drop-down a,h1{
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  color: black;
+
+} 
+.drop:hover{
+  background-color: rgb(207, 200, 200);
+}
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 90%;
+  height: 100%;
+  margin-top: 10%;
+}
+
+
+.image-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image{
+  justify-content: space-around;
+  padding: 0.2vw;
+  width: 20vw;
+  height: 35vw;
+  text-align: center;
+}
+
+
+.image img{
+  width: 18vw;
+  height:25vw;
+}
+
+.image h2{
+  font-size: 1.5vw;
+}
+
+.image p{
+  font-size: 1.5vw;
+}
+
+.pagination {
+  border-bottom: 1px solid rgb(226, 211, 211);
+  padding: 20px;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.pagination a{
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.pagination a:hover{
+  background-color: grey;
+}
+
+
+.about-me{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+@media all and (max-width:602px){
+  .image-section{
+    flex-wrap: wrap;
+  }
+  
+  .image{
+    width: 1000vw;
+    height:90vh;
+  }
+
+
+  .image img{
+    width: 90%;
+    height: 70%;
+  }
+
+  .image h2{
+    font-size: 3.5vw;
+  }
+
+  .image p{
+    font-size: 2.5vw;
+  }
+  
+}
+
+
+/* @media all and (max-width:600px){
+  .image{
+    padding: 5px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+/*@media all and (max-width:600px){          for mobile phones
+  body{
+    background-color: blue;
+  }
+
+  h1{
+    font-size: 90%;
+  }
+  img{
+     min-width: 25%;          percentages relative to the parent container 
+    min-height: 30%;
+  }
+}
+
+@media all and (min-width:601px) and (max-width:1000px){   for tablets 
+  body{
+    background-color: yellow;
+  }
+  h1{
+    font-size: 170%;
+  }
+}
+
+@media all and (min-width:1001px){ for larger sreens 
+  body h1{
+    font-size: 200%;
+  }
+} */
+
+
+
+
+
+
+
